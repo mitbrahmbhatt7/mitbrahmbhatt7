@@ -1,0 +1,6 @@
+// https://on.cypress.io/writing-first-test
+describe('Heading text', () => {
+    it('contains the correct title', () => {
+        cy.visit('https://storymaps.arcgis.com/')
+    })
+});
