@@ -1,0 +1,15 @@
+describe('Sign in', () => {
+    it('ArcGIS Sign in', () => {
+        cy.visit('https://storymaps.arcgis.com/')
+        cy.wait(900)
+        cy.get('.jsx-4157471165').click()
+        cy.wait(900)
+        cy.get('#user_username').type('mitbrahmbhatt7')
+        cy.wait(900)
+        cy.get('#user_password').type('mit267598')
+        cy.wait(900)
+        cy.get('#persistUser').click()
+        cy.wait(900)
+        cy.get('#signIn').click()
+    })
+});
