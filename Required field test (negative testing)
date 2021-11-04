@@ -1,0 +1,21 @@
+describe('Required field text', () => {
+    it('log in test', () => {
+        cy.visit('https://storymaps.arcgis.com/')
+        cy.wait(900)
+        cy.get('.jsx-4157471165').click()
+        cy.wait(900)
+        cy.get('#createAcctLink').click()
+        cy.wait(900)
+        cy.get('#firstName').type('Mit')
+        cy.wait(900)
+        cy.get('#email').type('mitbrahmbhatt7@gmail.com')
+        cy.wait(900)
+        cy.get('#confirm').type('mitbrahmbhatt7@gmail.com')
+        cy.wait(900)
+        cy.get('#terms').click()
+        cy.wait(900)
+        cy.get('#privacy').click()
+        cy.wait(900)
+        cy.get('#nextBtn').click()
+    })
+});
