@@ -1,6 +1,6 @@
 // https://on.cypress.io/writing-first-test
 describe('Heading text', () => {
-    it('contains the correct title', () => {
+    it('open url', () => {
         cy.visit('https://storymaps.arcgis.com/')
     })
 });
