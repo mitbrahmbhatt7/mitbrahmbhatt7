@@ -1,0 +1,13 @@
+describe('Existing account', () => {
+    it('checking existing account', () => {
+        cy.request('POST','https://storymaps.arcgis.com/:192.168.1.11:61758/users',
+        {
+        users: {
+            username : 'mitbrahmbhatt7',
+            email : 'mitbrahmbhatt7@gmail.com',
+            password:'mit267598',
+            failOnStatusCode: false
+            }
+        })
+    })
+})
