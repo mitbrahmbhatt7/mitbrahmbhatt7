@@ -19,5 +19,7 @@ describe('create an account', () => {
         cy.get('#privacy').click()
         cy.wait(700)
         cy.get('#nextBtn').click()
+        cy.wait(900)
+        cy.get('#secondary').should('have.text','Click the link in the email to complete account activation.')
     })
 });
