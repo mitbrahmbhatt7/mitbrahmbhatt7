@@ -6,7 +6,7 @@ describe('Sign in', () => {
         cy.wait(900)
         cy.get('#user_username').type('mitbrahmbhatt7')
         cy.wait(900)
-        cy.get('#user_password').type('mit267598')
+        cy.get('#user_password').type('pw*')
         cy.wait(900)
         cy.get('#persistUser').click()
         cy.wait(900)
